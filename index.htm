@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Six Hosted Images</title>
+    <style>
+        /* Basic styling for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Container to hold all images */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap; /* Allows images to wrap onto the next line */
+            justify-content: center;
+            gap: 20px; /* Space between images */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styling for each individual image container */
+        .image-container {
+            flex: 1 1 300px; /* Flex-grow, Flex-shrink, Flex-basis: minimum width of 300px */
+            max-width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Styling for the images themselves */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Image Gallery</h1>
+    
+    <div class="image-gallery">
+        <div class="image-container">
+            <img src="EngineeredSapphire.png" alt="Description of image 1">
+        </div>
+        
+        <div class="image-container">
+            <img src="EngineeredRuby.png" alt="Description of image 2">
+        </div>
+        
+        <div class="image-container">
+            <img src="EngineeredJet.png" alt="Description of image 3">
+        </div>
+        
+        <div class="image-container">
+            <img src="EngineeredPearl.png" alt="Description of image 4">
+        </div>
+
+        <div class="image-container">
+            <img src="EngineeredEmerald.png" alt="Description of image 5">
+        </div>
+
+        <div class="image-container">
+            <img src="EngineeredSolar.png" alt="Description of image 6">
+        </div>
+    </div>
+</body>
+</html>
